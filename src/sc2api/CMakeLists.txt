@@ -29,9 +29,14 @@ set(sc2api_sources
 add_library(sc2api STATIC ${sc2api_sources})
 
 target_include_directories(sc2api PUBLIC "${PROJECT_SOURCE_DIR}/include")
-target_include_directories(sc2api SYSTEM PUBLIC "${civetweb_SOURCE_DIR}/include")
+target_include_directories(sc2api SYSTEM
+    PUBLIC
+        "${civetweb_SOURCE_DIR}/include")
 
-target_link_libraries(sc2api PUBLIC sc2protocol civetweb-c-library)
+target_link_libraries(sc2api
+    PUBLIC
+        sc2protocol
+        civetweb-c-library)
 
 if (MSVC)
     target_compile_options(sc2api PRIVATE /W4 /WX-)

@@ -73,6 +73,7 @@ endif ()
 
 if (BUILD_API_TESTS)
     add_subdirectory(tests)
+    add_subdirectory(test)
 endif ()
 
 if (WSL2_CROSS_COMPILE)
@@ -80,6 +81,8 @@ if (WSL2_CROSS_COMPILE)
 endif ()
 
 # External subproject depedencies
+include(gtest)
+# include(abseil)
 include(civetweb)
 include(protobuf)
 include(sc2protocol)

@@ -36,14 +36,14 @@ int main(int argc, char* argv[]) {
     bool success = true;
 
     // Add tests here.
-   TEST(sc2::TestAbilityRemap);
-   TEST(sc2::TestSnapshots);
-   TEST(sc2::TestMultiplayer);
-   TEST(sc2::TestMovementCombat);
-   TEST(sc2::TestFastRestartSinglePlayer);
-   TEST(sc2::TestUnitCommand);
+//    TEST(sc2::TestAbilityRemap);
+//    TEST(sc2::TestSnapshots);
+//    TEST(sc2::TestMultiplayer);
+//    TEST(sc2::TestMovementCombat);
+//    TEST(sc2::TestFastRestartSinglePlayer);
+//    TEST(sc2::TestUnitCommand);
    TEST(sc2::TestPerformance);
-   TEST(sc2::TestObservationInterface);
+//    TEST(sc2::TestObservationInterface);
     //TEST(sc2::TestObservationActions);
 
 #ifdef BUILD_SC2_RENDERER

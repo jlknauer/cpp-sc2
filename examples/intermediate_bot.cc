@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
         bot2.mutalisk_build_ = false;
 
         while (coordinator.Update() && !do_break) {
-            if (sc2::PollKeyPress()) {
+            if (sc2::PollKeyPress() || coordinator.AllGamesEnded()) {
                 do_break = true;
             }
         }

@@ -1,0 +1,3 @@
+add_executable(observation_performance observation.cpp)
+
+target_link_libraries(observation_performance PRIVATE cpp_sc2 gtest)
